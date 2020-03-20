@@ -8,17 +8,17 @@ This project will run on **NodeJs** using **MongoDB** as database.
 
 ## Inspired by / Fork
 
-[repo](https://github.com/maitraysuthar/rest-api-nodejs-mongodb)
+[rest-api-nodejs-mongodb](https://github.com/maitraysuthar/rest-api-nodejs-mongodb)
 
 ## Features
 
+-   ES6 with Babel
 -   Basic Authentication (Register/Login with hashed password)
 -   Account confirmation with 4 (Changeable) digit OTP.
 -   Email helper ready just import and use.
 -   JWT Tokens, make requests with a token after login with `Authorization` header with value `Bearer yourToken` where `yourToken` will be returned in Login response.
 -   Pre-defined response structures with proper status codes.
 -   Included CORS.
--    **Book** example with **CRUD** operations.
 -   Validations added.
 -   Included API collection for Postman.
 -   Light-weight project.
