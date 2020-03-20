@@ -1,6 +1,7 @@
 import { body, validationResult, sanitizeBody } from "express-validator";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
 
 import UserModel from "../models/UserModel";
 
@@ -10,6 +11,9 @@ import { randomNumber } from "../helpers/utility";
 
 import mailer from "../helpers/mailer";
 import { constants } from "../helpers/constants";
+
+
+dotenv.config();
 
 /**
  * User registration.

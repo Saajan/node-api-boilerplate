@@ -7,6 +7,9 @@
 import app from '../app';
 import debug from 'debug';
 import http from 'http';
+import dotenv from "dotenv";
+
+dotenv.config();
 
 debug('node-api-boilerplate:server');
 
