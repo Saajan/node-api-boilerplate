@@ -10,8 +10,14 @@ import cors from "cors";
 
 dotenv.config();
 
+let MONGODB_URL;
 // DB connection
-const MONGODB_URL = process.env.MONGODB_URL;
+if (process.env.NODE_ENV == "test") {
+	MONGODB_URL = process.env.MONGODB_URL_TEST;
+}else{
+	MONGODB_URL = process.env.MONGODB_URL;
+}
+
 const mongoose = require("mongoose");
 mongoose.connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
 	//don't show the log when it is test
